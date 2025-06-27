@@ -8,7 +8,7 @@ repository = "https://github.com/RaubJo/luminos-container"
 license = "MIT"
 
 [dependencies]
-luminos-contracts = { path = "../Contracts", version = "0.1.0"} 
+luminos-contracts = { path = "../contracts", version = "0.1.0"} 
 
 [lints.rust]
 dead_code = "allow"
