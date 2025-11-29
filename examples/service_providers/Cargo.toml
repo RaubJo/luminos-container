@@ -1,0 +1,8 @@
+[package]
+name = "container-service-providers"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+luminos-container = { path = "../../", version = "*"} 
+luminos-contracts = { path = "../../../contracts", version = "*"} 

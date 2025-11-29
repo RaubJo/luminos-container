@@ -1,6 +1,6 @@
 [package]
 name = "luminos-container"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Joseph Raub <joseph@raubstudios.com>"]
 description = "Luminos Container"
@@ -8,7 +8,8 @@ repository = "https://github.com/RaubJo/luminos-container"
 license = "MIT"
 
 [dependencies]
-luminos-contracts = { path = "../contracts", version = "0.1.0"} 
+luminos-contracts = { path = "../contracts", version = "0.1.1"} 
+luminos-container-macros = { path = "../container_macros", version = "0.1.1"} 
 
 [lints.rust]
 dead_code = "allow"
