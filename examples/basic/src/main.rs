@@ -1,6 +1,6 @@
-use std::sync::Arc;
 use luminos_container::{Container, injectable};
 use luminos_contracts::container::Contract;
+use std::sync::Arc;
 
 #[injectable]
 impl MyRepository {
@@ -8,11 +8,9 @@ impl MyRepository {
         Self {}
     }
 
-    fn get(&self, _key: &str) -> String 
-    {
+    fn get(&self, _key: &str) -> String {
         "bar".to_string()
     }
-
 }
 
 #[injectable]
@@ -21,16 +19,15 @@ impl MyService {
         Self { repo }
     }
 
-    fn foo(&self) -> String
-    {
+    fn foo(&self) -> String {
         self.repo.get("foo")
     }
 }
 
 fn main() {
     let container = Container::new();
-    
+
     let service = container.resolve::<MyService>();
-    
+
     println!("Getting key 'foo' from repository: {}", service.foo());
 }
